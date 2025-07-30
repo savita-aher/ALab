@@ -1,7 +1,7 @@
 // The initial numbers that must be verified.
 console.log("Hello from Savita's script!");
 //Part 1: Math Problems
-console.log("Part 1Part 1: Math Problems");
+/*console.log("Part 1 : Math Problems");
 
 const n1 = 10;
 const n2 = 15;
@@ -27,12 +27,34 @@ const n4 = 5;
 
 
 /*Change the way that isOver25 calculates so that we do not need to use the NOT 
- operator (!) in other logic comparisons. Rename the variable as appropriate.*/
+ operator (!) in other logic comparisons. Rename the variable as appropriate.
 
 const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25
-console.log(isOver25)
+console.log(isOver25) */
 
+console.log("Part 2: Practical Math");
+//How many gallons of fuel will you need for the entire trip?
+const distance=1500;
+const budget =175;
 
+let TotalFuelfor55permile = 1500/30;
+let TotalPricefor55permile=TotalFuelfor55permile*3;
+console.log("Fuel for 55mile/hour Average: " ,TotalFuelfor55permile + " gallons");
+console.log("Price for 55mile/hour Average: $" ,TotalPricefor55permile);
+console.log(""); // This prints a blank line
+
+let TotalFuelfor60permile = 1500/28;
+let TotalPricefor60permile=TotalFuelfor60permile*3;
+console.log("Fuel for 60mile/hour Average: " ,TotalFuelfor60permile + " gallons");
+console.log("Price for 60mile/hour Average: $" ,TotalPricefor60permile);
+console.log(""); // This prints a blank line
+
+let TotalFuelfor75permile = 1500/23;
+let TotalPricefor75permile=TotalFuelfor75permile*3;
+console.log("Fuel for 75mile/hour Average: " ,TotalFuelfor75permile + " gallons");
+console.log("Price for 75mile/hour Average: $" ,TotalPricefor75permile);
+
+//Will your budget be enough to cover the fuel expense?
 /*// Check one: add up to 50
 // This is a fairly simple operation using
 // arithmetic operators and a comparison.
