@@ -1,12 +1,39 @@
 // The initial numbers that must be verified.
 console.log("Hello from Savita's script!");
+//Part 1: Math Problems
+console.log("Part 1Part 1: Math Problems");
 
 const n1 = 10;
 const n2 = 15;
 const n3 = 20;
 const n4 = 5;
 
-// Check one: add up to 50
+//Check if all numbers are divisible by 5. Cache the result in a variable.
+  let IsDivBy5 = n1 % 5 == 0 && n2 % 5 == 0 && n3 % 5 == 0 && n4 % 5 == 0;
+  console.log(IsDivBy5);
+
+//Check if the first number is larger than the last. Cache the result in a variable.
+  let IsFirstLargeThanLast= n1>n4;
+  console.log(IsFirstLargeThanLast);
+
+//Accomplish the following arithmetic chain:
+//Subtract the first number from the second number.
+    let x=n2-n1;
+//Multiply the result by the third number.
+    let y=x*n3;
+//Find the remainder of dividing the result by the fourth number.
+    let z=y%n4;
+    console.log(z);
+
+
+/*Change the way that isOver25 calculates so that we do not need to use the NOT 
+ operator (!) in other logic comparisons. Rename the variable as appropriate.*/
+
+const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25
+console.log(isOver25)
+
+
+/*// Check one: add up to 50
 // This is a fairly simple operation using
 // arithmetic operators and a comparison.
 const isSum50 = (n1 + n2 + n3 + n4) == 50;
@@ -44,4 +71,4 @@ console.log(isValid);
 const dontDoThis = ((n1 + n2 + n3 + n4) == 50) && 
   ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) && 
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
-  (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+  (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);*/
