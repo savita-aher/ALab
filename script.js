@@ -1,7 +1,6 @@
-// The initial numbers that must be verified.
 console.log("Hello from Savita's script!");
 //Part 1: Math Problems
-/*console.log("Part 1 : Math Problems");
+console.log("Part 1 : Math Problems");
 
 const n1 = 10;
 const n2 = 15;
@@ -26,11 +25,8 @@ const n4 = 5;
     console.log(z);
 
 
-/*Change the way that isOver25 calculates so that we do not need to use the NOT 
- operator (!) in other logic comparisons. Rename the variable as appropriate.
-
 const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25
-console.log(isOver25) */
+console.log(isOver25) 
 
 console.log("Part 2: Practical Math");
 //How many gallons of fuel will you need for the entire trip?
@@ -53,10 +49,26 @@ let TotalFuelfor75permile = 1500/23;
 let TotalPricefor75permile=TotalFuelfor75permile*3;
 console.log("Fuel for 75mile/hour Average: " ,TotalFuelfor75permile + " gallons");
 console.log("Price for 75mile/hour Average: $" ,TotalPricefor75permile);
+console.log(""); // This prints a blank line
+
+//How many gallons of fuel will you need for the entire trip?
+//Will your budget be enough to cover the fuel expense?
+//How long will the trip take, in hours?
+
+let AverageSpeed=(55+60+75)/3;
+let AverageGallon=(30+28+23)/3;
+let TotalTravelTimeAtAvgSpeed=(1500/AverageSpeed);
+let TotalGallonAtAvgSpeed=(1500/AverageGallon);
+let TotalCostForFuel=TotalGallonAtAvgSpeed*3;
+ console.log("Total Fuel Required for entire Trip",TotalGallonAtAvgSpeed +" gallons");
+ console.log("Total Cost Required for entire Trip $",TotalCostForFuel);
+console.log("How long will the trip take:",TotalTravelTimeAtAvgSpeed +" hours");
 
 //Will your budget be enough to cover the fuel expense?
-/*// Check one: add up to 50
-// This is a fairly simple operation using
+
+console.log("Will your budget be enough to cover the fuel expense?: ", (175 > TotalCostForFuel));
+
+/*
 // arithmetic operators and a comparison.
 const isSum50 = (n1 + n2 + n3 + n4) == 50;
 
