@@ -1,4 +1,6 @@
 // The initial numbers that must be verified.
+console.log("Hello from Savita's script!");
+
 const n1 = 10;
 const n2 = 15;
 const n3 = 20;
